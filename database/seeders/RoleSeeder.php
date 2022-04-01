@@ -32,7 +32,7 @@ class RoleSeeder extends Seeder
 
         //* CATEGORIES * */
         // ver listado de categorias
-        Permission::create(['name' => 'admin.categories.index'])->syncRoles([$role1]);
+        Permission::create(['name' => 'admin.categories.index'])->syncRoles([$role1, $role2]);
         // crear cateogria
         Permission::create(['name' => 'admin.categories.create'])->syncRoles([$role1]);
         // editar categoria
@@ -42,7 +42,7 @@ class RoleSeeder extends Seeder
 
         //* TAGS * */
         // ver listado de tags
-        Permission::create(['name' => 'admin.tags.index'])->syncRoles([$role1]);
+        Permission::create(['name' => 'admin.tags.index'])->syncRoles([$role1, $role2]);
         // crear tags
         Permission::create(['name' => 'admin.tags.create'])->syncRoles([$role1]);
         // editar tags

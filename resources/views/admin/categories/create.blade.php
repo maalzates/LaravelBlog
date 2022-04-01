@@ -37,6 +37,7 @@
 
         </div>
 
+
         {!! Form::submit('Crear categoría', ['class'=>'btn btn-primary']) !!}
         {!! Form::close()!!}
     </div>
